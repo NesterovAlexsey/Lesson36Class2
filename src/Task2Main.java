@@ -14,4 +14,8 @@
 // При провале любой из проверок нужно вывести на экран соответствующее сообщение.
 
 public class Task2Main {
+  public static void main(String[] args) {
+    Triangle test = new Triangle(2, 3, 2);
+    System.out.println(test);
+  }
 }
