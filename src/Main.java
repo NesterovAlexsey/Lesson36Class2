@@ -9,16 +9,20 @@
 //
 // Если добавки нет, нужно вернуть строку "Обычная газировка".
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Main {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
+    BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+
+    String additionalTaste = read.readLine();
 
     Soda myBestDrink = new Soda("Raspberry");
-    Soda test = new Soda("test taste");
-
-    myBestDrink.printInfo();
+    Soda test = new Soda(additionalTaste);
 
     System.out.println(myBestDrink.getMyDrinkString());
     System.out.println(test.getMyDrinkString());
-    System.out.println(myBestDrink.getAddition());
   }
 }

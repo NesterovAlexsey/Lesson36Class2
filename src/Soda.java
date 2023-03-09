@@ -11,6 +11,9 @@ public class Soda {
   }
 
   public String getMyDrinkString() {
+    if (addition.isEmpty()) {
+      return "Обычная газировка";
+    }
     return "Газировка и " + addition;
   }
 
