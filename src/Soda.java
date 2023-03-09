@@ -10,7 +10,8 @@ public class Soda {
     System.out.println(addition);
   }
 
-//  public String GetMyDrinkString() {
-//  return
-//  }
+  public String getMyDrinkString() {
+    String dataForPrint = "Газировка и " + addition;
+  return dataForPrint;
+  }
 }
